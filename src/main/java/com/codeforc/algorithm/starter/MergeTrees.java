@@ -1,7 +1,6 @@
 package com.codeforc.algorithm.starter;
 
 import com.codeforc.algorithm.datastruct.TreeNode;
-import sun.reflect.generics.tree.Tree;
 
 /**
  * 给定两个二叉树，想象当你将它们中的一个覆盖到另一个上时，两个二叉树的一些节点便会重叠。
@@ -37,8 +36,5 @@ public class MergeTrees {
         mergeNode.right = mergeTrees(t1.right, t2.right);
         return mergeNode;
     }
-
-
-
 
 }
