@@ -1,9 +1,6 @@
 package com.codeforc.algorithm.sword.offer;
 
-import java.util.Deque;
-import java.util.Iterator;
 import java.util.LinkedList;
-import java.util.Stack;
 
 /**
  * 剑指 Offer (一)
