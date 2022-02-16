@@ -7,7 +7,12 @@ import com.codeforc.algorithm.datastruct.TreeNode;
 public class IsSubStructure {
 
     public boolean isSubStructure(TreeNode A, TreeNode B) {
+        return (A != null && B != null) && (eq(A, B) || isSubStructure(A.left, B) || isSubStructure(A.right, B));
+    }
 
-        return false;
+    private boolean eq(TreeNode a, TreeNode b) {
+        if(b == null) return true;
+        if(a == null || a.val != b.val) return false;
+        return eq(a.left, b.left) && eq(a.right, b.right);
     }
 }
