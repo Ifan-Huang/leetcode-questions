@@ -30,9 +30,6 @@ public class TreeIsSymmetric {
 
         TreeIsSymmetric treeIsSymmetric = new TreeIsSymmetric();
         boolean symmetric = treeIsSymmetric.isSymmetric(root);
-        System.out.printf("" + symmetric);
-
     }
-
 
 }
